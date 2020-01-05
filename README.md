@@ -2,7 +2,7 @@
 
 ## Github仓库、pythonanywhere项目部署
 - [pythonanywhere](https://sandman999.pythonanywhere.com)
-- [Github](https://note.youdao.com/)
+- [Github](https://github.com/QiuYuAn0303/flask_final_work/tree/master)
 
 ## 项目页面说明
 #### 本项目一共有6个页面，URL如下:
