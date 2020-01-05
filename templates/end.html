@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+body {
+    background-color: #F7EED6;
+    font-size: medium;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0px 10px 0px 10px;
+    padding: 5%;
+}
+
+table {
+    margin-left:      10px;
+    margin-right:     10px;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+}
+
+input[type=text] {
+  font-size:        115%;
+  width:            30em;}
+</style>
+
+<table>
+<p>选择你想要查看的数据</p>
+<tr><td><select name="chonse" onchange="window.location=this.value;">
+    <option>请选择</option>
+    <option value=" https://sandman999.pythonanywhere.com/home">首页</option>
+    <option value=" https://sandman999.pythonanywhere.com/map">各省个体就业情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/line">各省个体就业人数与高校毕业人数对比</option>
+    <option value=" https://sandman999.pythonanywhere.com/bar">各省城镇失业率情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/jielun2">各省个体就业数与各省第二、三产业加值情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/end">总结</option>
+</select></td></tr>
+</table>
+<h1>总结</h1>
+<h2>综上所述：</h2>
+<h3>影响各省个体就业的因素有：1-高校毕业生数量与各省城镇失业率 2-各省城镇化程度。并且它们之间的关系如下：</h3>
+<h3>结论一：各省个体就业数量与高校毕业生数量成正比，并且高校毕业生数量也与城镇失业率成正比。</h3>
+<h3>结论二： 各省个体就业数量与各省城镇化程度成正比，各省城镇化程度可以通过各省第二、三产业的发展状况来推出。</h3>
+<h2>数据来源：</h2>
+<p>国家数据</p>
+<h2>数据类型：</h2>
+<p>各省个体就业数量、各省高校毕业生数量、各省城镇失业率、各省第二产业的加值、各省第三产业的加值。</p>
+
+</body>
+</html>

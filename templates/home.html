@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择你想要查看的数据</title>
+    <link rel="stylesheet" href="static/fhly.css" type="text/css">
+</head>
+<body>
+<style>
+body {
+    background-color: #F7EED6;
+    font-size: medium;
+    font-family: Verdana, Arial, sans-serif;
+    margin: margin: 20px 10px 20px 10px;
+    padding: 5%;
+}
+
+table {
+    margin-left:      10px;
+    margin-right:     10px;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+}
+
+input[type=text] {
+  font-size:        115%;
+  width:            30em;}
+</style>
+<table>
+<p>选择你想要查看的数据</p>
+<tr><td><select name="chonse" onchange="window.location=this.value;">
+   <option>请选择</option>
+    <option value=" https://sandman999.pythonanywhere.com/home">首页</option>
+    <option value=" https://sandman999.pythonanywhere.com/map">各省个体就业情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/line">各省个体就业人数与高校毕业人数对比</option>
+    <option value=" https://sandman999.pythonanywhere.com/bar">各省城镇失业率情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/jielun2">各省个体就业数与各省第二、三产业加值情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/end">总结</option>
+</select></td></tr>
+</table>
+<h1>概述:</h1>
+<p>毕业后找工作是许多大学生十分关心的问题，一个学校的学生来自天南地北，</p>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+    <link rel="stylesheet" href="static/fhly.css">
+
+</head>
+<body>
+<table>
+    <style>
+body {
+    background-color: #F7EED6;
+    font-size: medium;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0px 10px 0px 10px;
+    padding: 5%;
+}
+
+table {
+    margin-left:      10px;
+    margin-right:     10px;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+}
+
+input[type=text] {
+  font-size:        115%;
+  width:            30em;}
+</style>
+<p>选择你想要查看的数据</p>
+<tr><td><select name="chonse" onchange="window.location=this.value;">
+    <option>请选择</option>
+    <option value=" https://sandman999.pythonanywhere.com/home">首页</option>
+    <option value=" https://sandman999.pythonanywhere.com/map">各省个体就业情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/line">各省个体就业人数与高校毕业人数对比</option>
+    <option value=" https://sandman999.pythonanywhere.com/bar">各省城镇失业率情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/jielun2">各省个体就业数与各省第二、三产业加值情况</option>
+    <option value=" https://sandman999.pythonanywhere.com/end">总结</option>
+</select></td></tr>
+</table>
+    <div id="35a67ff1f8d74a29a5f4355f3fce1b44" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_35a67ff1f8d74a29a5f4355f3fce1b44 = echarts.init(
+            document.getElementById('35a67ff1f8d74a29a5f4355f3fce1b44'), 'white', {renderer: 'canvas'});
+        var option_35a67ff1f8d74a29a5f4355f3fce1b44 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u4e2a\u4f53\u5c31\u4e1a\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "china",
+            "data": [
+                {
+                    "name": "\u5317\u4eac",
+                    "value": 40.22
+                },
+                {
+                    "name": "\u5929\u6d25",
+                    "value": 106.54
+                },
+                {
+                    "name": "\u6cb3\u5317",
+                    "value": 410.63
+                },
+                {
+                    "name": "\u5c71\u897f",
+                    "value": 261.16
+                },
+                {
+                    "name": "\u5185\u8499\u53e4",
+                    "value": 226.83
+                },
+                {
+                    "name": "\u8fbd\u5b81",
+                    "value": 296.69
+                },
+                {
+                    "name": "\u5409\u6797",
+                    "value": 242.76
+                },
+                {
+                    "name": "\u9ed1\u9f99\u6c5f",
+                    "value": 346.92
+                },
+                {
+                    "name": "\u4e0a\u6d77",
+                    "value": 42.72
+                },
+                {
+                    "name": "\u6c5f\u82cf",
+                    "value": 834.82
+                },
+                {
+                    "name": "\u6d59\u6c5f",
+                    "value": 590.56
+                },
+                {
+                    "name": "\u5b89\u5fbd",
+                    "value": 635.59
+                },
+                {
+                    "name": "\u798f\u5efa",
+                    "value": 758.26
+                },
+                {
+                    "name": "\u6c5f\u897f",
+                    "value": 311.18
+                },
+                {
+                    "name": "\u5c71\u4e1c",
+                    "value": 467.0
+                },
+                {
+                    "name": "\u6cb3\u5357",
+                    "value": 691.9
+                },
+                {
+                    "name": "\u6e56\u5317",
+                    "value": 584.32
+                },
+                {
+                    "name": "\u6e56\u5357",
+                    "value": 324.04
+                },
+                {
+                    "name": "\u5e7f\u4e1c",
+                    "value": 991.44
+                },
+                {
+                    "name": "\u5e7f\u897f",
+                    "value": 304.27
+                },
+                {
+                    "name": "\u6d77\u5357",
+                    "value": 73.67
+                },
+                {
+                    "name": "\u91cd\u5e86",
+                    "value": 267.98
+                },
+                {
+                    "name": "\u56db\u5ddd",
+                    "value": 340.09
+                },
+                {
+                    "name": "\u8d35\u5dde",
+                    "value": 175.77
+                },
+                {
+                    "name": "\u4e91\u5357",
+                    "value": 220.3
+                },
+                {
+                    "name": "\u897f\u85cf",
+                    "value": 44.17
+                },
+                {
+                    "name": "\u9655\u897f",
+                    "value": 417.87
+                },
+                {
+                    "name": "\u7518\u8083",
+                    "value": 114.87
+                },
+                {
+                    "name": "\u9752\u6d77",
+                    "value": 65.09
+                },
+                {
+                    "name": "\u5b81\u590f",
+                    "value": 57.09
+                },
+                {
+                    "name": "\u65b0\u7586",
+                    "value": 195.52
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e2a\u4f53\u5c31\u4e1a\u6570"
+            ],
+            "selected": {
+                "\u4e2a\u4f53\u5c31\u4e1a\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5404\u7701\u4e2a\u4f53\u5c31\u4e1a\u6570\u91cf"
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 1000,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140
+    }
+};
+        chart_35a67ff1f8d74a29a5f4355f3fce1b44.setOption(option_35a67ff1f8d74a29a5f4355f3fce1b44);
+    </script>
+<p>有该图可以看出，个体就业人书最多的省份是广东省991.44万人，其次是江苏省与河南省，偏低的是西藏、北京等地。</p>
+</body>
+</html>
